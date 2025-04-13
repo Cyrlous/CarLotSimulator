@@ -29,6 +29,8 @@ namespace CarLotSimulator
             //Instantiate the CarLot at the beginning of the program and as you create a car add the car to the list.
             //At the end iterate through the list printing each of car's Year, Make, and Model to the console
 
+            var dansCarLot = new CarLot();
+            
             var sedan = new Car()
             {
                 Year = 2015,
@@ -37,6 +39,8 @@ namespace CarLotSimulator
                 EngineNoise = "Vroom",
                 HonkNoise = "Honk!"
             };
+            
+            dansCarLot.CarList.Add(sedan);
 
             var truck = new Car();
             truck.Year = 2016;
@@ -45,7 +49,13 @@ namespace CarLotSimulator
             truck.EngineNoise = "VRROOOOOM!";
             truck.HonkNoise = "HONK!";
 
+            dansCarLot.CarList.Add(truck);
+
             var hatchback = new Car(2019, "Nissan", "Rogue", "Vrrrrroom", "Beep!");
+            
+            dansCarLot.CarList.Add(hatchback);
+            
+            dansCarLot.ListCars();
             
             sedan.MakeEngineNoise(sedan.EngineNoise);
             truck.MakeEngineNoise(truck.EngineNoise);
