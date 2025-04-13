@@ -9,6 +9,15 @@ public class Car
     {
         
     }
+    
+    public Car(int year, string make, string model, string engineNoise, string honkNoise)
+    {
+        Year = year;
+        Make = make;
+        Model = model;
+        EngineNoise = engineNoise;
+        HonkNoise = honkNoise;
+    }
 
     public int Year { get; set; }
     public string Make { get; set; }
