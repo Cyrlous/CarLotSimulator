@@ -7,7 +7,7 @@ public class Car
 {
     public Car()
     {
-        
+        CarLot.numberOfCars++;
     }
     
     public Car(int year, string make, string model, string engineNoise, string honkNoise)
@@ -17,6 +17,7 @@ public class Car
         Model = model;
         EngineNoise = engineNoise;
         HonkNoise = honkNoise;
+        CarLot.numberOfCars++;
     }
 
     public int Year { get; set; }

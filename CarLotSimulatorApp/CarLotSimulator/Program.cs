@@ -41,6 +41,7 @@ namespace CarLotSimulator
             };
             
             dansCarLot.CarList.Add(sedan);
+            Console.WriteLine($"Number of cars on the lot is now {CarLot.numberOfCars}");
 
             var truck = new Car();
             truck.Year = 2016;
@@ -50,10 +51,12 @@ namespace CarLotSimulator
             truck.HonkNoise = "HONK!";
 
             dansCarLot.CarList.Add(truck);
+            Console.WriteLine($"Number of cars on the lot is now {CarLot.numberOfCars}");
 
             var hatchback = new Car(2019, "Nissan", "Rogue", "Vrrrrroom", "Beep!");
             
             dansCarLot.CarList.Add(hatchback);
+            Console.WriteLine($"Number of cars on the lot is now {CarLot.numberOfCars}");
             
             dansCarLot.ListCars();
             
